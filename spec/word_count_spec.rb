@@ -4,6 +4,6 @@ require('rspec')
 
     describe("word_count")do
     it("Identifies if a word is present in a sentence")do
-      expect(("bulubala").count()).to(eql("bulubala"))
+      expect(("bulubala").count()).to(eql(["true"]))
     end
   end
