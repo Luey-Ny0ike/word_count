@@ -7,6 +7,11 @@ require('sinatra')
 
   get('/') do
     erb(:form)
-    word = params.fetch('word')
-    @content = params.fetch('content').count(word)
+
   end
+
+get('/results')do
+word = params.fetch('word')
+@content = params.fetch('content').count(word)
+erb(:results)
+end
