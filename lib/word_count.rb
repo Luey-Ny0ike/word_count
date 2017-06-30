@@ -4,10 +4,10 @@ class String
       sentence = self.split(' ')
        sentence.each()do |neno|
 
-    if neno == word
+    if word == neno.gsub(/[!,@,?,"",:,;,.]/, "")
       counter = counter+1
     end
-  end
+    end
   counter
  end
 end
