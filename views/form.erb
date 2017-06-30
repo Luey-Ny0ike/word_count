@@ -1,7 +1,7 @@
 <h1>Word count!</h1>
 <h3><em>It's simple just write a word and copy the content in the text area and
 we'll tell you how many times it has appeared</em></h3>
-<form action="/results">
+<form action="/form">
   <div class="form-group">
     <label for="word">Enter your word here</label>
     <input id="word" name="word" class="form-control" type="text">
@@ -14,3 +14,7 @@ we'll tell you how many times it has appeared</em></h3>
 
   <button type="submit" class="btn btn-info">count!</button>
 </form>
+
+
+
+<h2><strong>Output:</strong><%=@content%></h2>

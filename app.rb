@@ -10,8 +10,8 @@ require('sinatra')
 
   end
 
-get('/results')do
+get('/form')do
 word = params.fetch('word')
 @content = params.fetch('content').count(word)
-erb(:results)
+erb(:form)
 end
