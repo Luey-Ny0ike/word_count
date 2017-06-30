@@ -1,13 +1,14 @@
 class String
-  define_method(:count)do
-    result = []
-    search_word = []
-    sentence = self.split()
-    sentence.each()do |word|
+  define_method(:count)do |word, sentence|
+    counter = 0
+     search_word = self
+      sentence = self.split(' ')
+       sentence.each()do |word|
 
-    if word == self
-      result.push("true")
+    if word == search_word
+      counter = counter+1
     end
-    end
+    counter
   end
+ end
 end
