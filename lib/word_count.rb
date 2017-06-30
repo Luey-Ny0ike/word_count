@@ -1,11 +1,11 @@
 class String
-  define_method(:count)do |word, sentence|
+  define_method(:count)do |word, maneno|
     counter = 0
-     search_word = self
-      sentence = self.split(' ')
-       sentence.each()do |word|
+     search_word = word
+      sentence = maneno.split(' ')
+       sentence.each()do |neno|
 
-    if word == search_word
+    if neno == search_word
       counter = counter+1
     end
     counter
