@@ -1,15 +1,12 @@
 class String
-  define_method(:count)do |word|
+  define_method(:count) do |word|
     counter = 0
     extra = word
-      sentence = self.split(' ')
-       sentence.each()do |neno|
-
-    word = neno.gsub(/[!,@,?,"",:,;,.]/, "")
-      if  word.include? extra
-      counter = counter+1
-      end
+    sentence = split(' ')
+    sentence.each do |neno|
+      word = neno.gsub(/[!,@,?,"",:,;,.]/, '')
+      counter += 1 if word.include? extra
     end
-  counter
- end
+    counter
+  end
 end
